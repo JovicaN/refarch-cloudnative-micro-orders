@@ -31,7 +31,7 @@ podTemplate(
                     REGISTRY=`cat /var/run/configs/registry-config/registry`
 
                     cd docker
-                     chmod +x ./startup.sh
+                   
                     docker build -t \${REGISTRY}/\${NAMESPACE}/bluecompute-orders:${env.BUILD_NUMBER} .                    
                 """
             }
